@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+body.facebook-style{
+    --body-color: #18191A;
+    --renk1: #242526;
+    --renk2: #18191A;
+    --renk3: #2D88FF;
+    --renk4: #fff;
+    --renk5: #fff;
+    --renk6: #333;
+    --renk7: #fff;
+    --pre-color: #2D2D2D;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    color: var(--renk3);
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--renk4);
+    letter-spacing: 0.3;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .3px;
+}
+
+a{
+    text-decoration: underline;
+    color: var(--renk3);
+}
+
+.intro{
+    height: calc(100vh - 50px);
+    background: var(--renk1);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr auto;
+}
+
+.intro-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-footer{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .4px;
+    padding-bottom: 50px;
+    color: var(--renk5);
+}
+
+.intro-sidebar{
+    background: var(--renk2);
+    grid-column: 2;
+    grid-row: 1/3;
+    padding: 25px;
+    overflow: auto;
+}
+
+.intro-sidebar section:not(:last-child){
+    margin-bottom: 40px;
+
+}
+
+.intro-sidebar section h3{
+    padding-bottom: 10px;
+    color: var(--renk4);
+}
+
+.intro-sidebar section ul li a{
+    display: block;
+    padding: 3px 0;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--renk5);
+    opacity: .8;
+}
+
+main{
+    background: var(--renk3);
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 1fr 1100px 2fr;
+}
+
+main header .container{
+    height: 50px;
+}
+
+main header .container h2{
+    grid-column: 2/3;
+    align-self: center;
+}
+
+main header .container h2 a{
+    color: var(--renk4);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.content{
+    grid-column: 2/3;
+}
+
+article{
+    background: var(--renk2);
+}
+
+.container .sidebar{
+    grid-column: 3;
+    background: var(--renk2);
+    padding: 25px;
+}
+
+.container .sidebar .version{
+    font-size: 16px;
+    padding: 20px;
+}
+
+main .sidebar nav ul li{
+   margin-bottom: 5px;
+}
+
+main .sidebar nav ul li a{
+    display: block;
+    padding: 2px 0;
+    font-size: 18px;
+}
+
+
